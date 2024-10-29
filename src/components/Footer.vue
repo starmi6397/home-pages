@@ -21,9 +21,11 @@
           </a>
         </span>
         <!-- 站点备案 -->
+        <!--这里改了萌备-->
+        <!--换成直接的链接-->
         <span>
           &amp;
-          <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
+          <a v-if="siteIcp" href="https://icp.gov.moe/?keyword=20241289" target="_blank">
             {{ siteIcp }}
           </a>
         </span>
