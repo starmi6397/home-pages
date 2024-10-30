@@ -21,12 +21,14 @@
           </a>
         </span>
         <!-- 站点备案 -->
-        <!--这里改了萌备-->
-        <!--换成直接的链接-->
+        <!--增加萌备-->
         <span>
           &amp;
-          <a v-if="siteIcp" href="https://icp.gov.moe/?keyword=20241289" target="_blank">
+          <a v-if="siteIcp" href="https://beian.miit.gov.cn/" target="_blank">
             {{ siteIcp }}
+          </a>
+          <a v-if="siteMoeIcp" href="https://icp.gov.moe/?keyword=20241289" target="_blank">
+            {{ siteMoeIcp }}
           </a>
         </span>
       </div>
@@ -58,6 +60,7 @@ const startYear = ref(
   import.meta.env.VITE_SITE_START.substring(0, 4) : null
 );
 const siteIcp = ref(import.meta.env.VITE_SITE_ICP);
+const siteMoeIcp = ref(import.meta.env.VITE_MOE_SITE_ICP);
 const siteAuthor = ref(import.meta.env.VITE_SITE_AUTHOR);
 const siteUrl = computed(() => {
   const url = import.meta.env.VITE_SITE_URL;
