@@ -27,7 +27,7 @@
           <a v-if="siteIcp" href="https://beian.miit.gov.cn/" target="_blank">
             {{ siteIcp }}
           </a>
-          <a v-if="siteMoeIcp" href="https://icp.gov.moe/?keyword=20241289" target="_blank">
+          <a v-if="siteMoeIcp" href="https://icp.gov.moe/?keyword=20255201" target="_blank">
             {{ siteMoeIcp }}
           </a>
         </span>
